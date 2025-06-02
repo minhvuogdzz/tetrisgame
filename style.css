@@ -4,8 +4,21 @@
 
 body {
   background-color: #e6e6e6;
+  background: linear-gradient( 0deg, #ffffff, #226aaa);
 }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  padding: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 50px;
+  overflow: hidden;
+}
+
 .container {
+  position: relative;
   display: grid;
   grid-template-columns: 320px 200px;
   justify-content: center;
@@ -27,5 +40,33 @@ body {
   font-size: 16px;
   padding: 15px 30px;
   cursor: pointer;
+  border: 6px solid #0a6063;
+  border-radius: 10px;
+  color: #ffffff;
 }
 
+.play-btn:hover {
+  background: linear-gradient(to right, #0a6063, #ffffff);
+}
+
+.footer {
+  position: fixed;
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* color: #fff; */
+}
+
+.footer p {
+  font-size: 14px;
+  color: #ffffff;
+  display: inline;
+  outline: none;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
